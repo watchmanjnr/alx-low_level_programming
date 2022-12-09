@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /**
- *
  * main - returns alphabets without q and e
  *
  * Return: 0
