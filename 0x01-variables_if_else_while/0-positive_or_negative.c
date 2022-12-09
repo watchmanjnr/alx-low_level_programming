@@ -8,13 +8,13 @@ int main(void)
 {
 	int number;
 
-	printf("Enter the n\n");
+	printf("Enter the number\n");
 
 	scanf("%d", &number);
 
-	if (n > 0)
+	if (number > 0)
 		printf("%d is a positive Number", number);
-	else if (n < 0)
+	else if (number < 0)
 		printf("%d is a negative Number", number);
 	else
 		printf("%d is Zero", number);
