@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - returns alphabets both lower and upper cases
  *
@@ -8,7 +9,7 @@
 int main(void)
 {
 	int ch = 'a';
-	int ch = 'A';
+	int CH = 'A';
 
 	while (ch <= 'z')
 	{
