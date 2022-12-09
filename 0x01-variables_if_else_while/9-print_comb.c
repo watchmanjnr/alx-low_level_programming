@@ -1,27 +1,27 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Print all possible combinations for single digit numbers.
- * Numbers must be separated by commas and a space.
- * You can only use 'putchar' to print and console
- * You can only use 'putchar' up to four times.
- * You are not allowed to use any variable of type 'char'
+ * Description: Use `putchar` to print lowercase and then uppercase alphabet.
  * Return: 0
  */
 int main(void)
 {
-	int i = 0;
+	char c = 'a';
 
-	while (i < 10)
+	while (c <= 'z')
 	{
-		putchar(i + '0');
-		if (i < 9)
-		{
-			putchar(44);
-			putchar(32);
-		}
-		i++
+		putchar(c)
+		c++;
 	}
+
+	c = 'A';
+
+	while (c <= 'Z')
+	{
+		putchar(c);
+		c++;
+	}
+
 	putchar('\n');
 
 	return (0);
