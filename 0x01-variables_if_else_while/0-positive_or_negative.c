@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Positive anything is better than negative nothing
  *
@@ -6,18 +8,23 @@
 */
 int main(void)
 {
-	int number;
+	int n;
 
-	printf("Enter the number\n");
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-	scanf("%d", &number);
-
-	if (number > 0)
-		printf("%d is a positive Number", number);
-	else if (number < 0)
-		printf("%d is a negative Number", number);
-	else
-		printf("%d is Zero", number);
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
+	}
 
 	return (0);
 }
