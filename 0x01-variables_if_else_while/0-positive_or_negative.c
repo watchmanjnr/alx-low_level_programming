@@ -1,14 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - Positive anything is better than negative nothing
+ *
+ * Return: 0
+*/
 int main(void)
 {
-	int n;
+	int number;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	printf("Enter the number\n");
+
+	scanf("%d", &number);
+
+	if (number > 0)
+		printf("%d is a positive Number", number);
+	else if (number < 0)
+		printf("%d is a negative Number", number);
+	else
+		printf("%d is Zero", number);
+
 	return (0);
 }
