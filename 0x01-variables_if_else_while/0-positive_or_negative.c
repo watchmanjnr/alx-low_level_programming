@@ -6,15 +6,15 @@
 */
 int main(void)
 {
-	int number;
+	int n;
 
-	printf("Enter the number\n");
+	printf("Enter the n\n");
 
 	scanf("%d", &number);
 
-	if (number > 0)
+	if (n > 0)
 		printf("%d is a positive Number", number);
-	else if (number < 0)
+	else if (n < 0)
 		printf("%d is a negative Number", number);
 	else
 		printf("%d is Zero", number);
