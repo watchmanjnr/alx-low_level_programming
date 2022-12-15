@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * print_most_numbers - print numbers except 2 and 4
  *
@@ -19,5 +18,5 @@ continue;
 }
 putchar(n);
 }
-putchar('\n');
+putchar(10);
 }
